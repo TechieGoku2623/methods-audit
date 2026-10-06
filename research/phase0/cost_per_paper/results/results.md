@@ -1,6 +1,6 @@
 # cost_per_paper results
 
-n papers = 50. Local render+tokenize = 8.54 ms total. API RTT = unmeasured.
+n papers = 50. Local render+tokenize = 8.50 ms total. API RTT = unmeasured.
 
 Default extraction model: gemini-2.0-flash ($0.000345/paper). Escalate to a larger tier only when the cache miss fails span-grounded validation.
 

@@ -104,42 +104,42 @@ not defensible.
 
 Measurement: `research/phase0/field_f1/`.
 
-| field | gold+ | TP | FP | FN | precision | recall | F1 | decision |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| target_gene | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| species | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| genome_build | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| cas_nuclease | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| guide_sequence | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| pam_motif | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| delivery_method | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| cell_line_or_organism | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| editing_assay | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| n_biological_replicates | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| nontargeting_control | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| off_target_analysis_method | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| cell_line_rrid | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| donor_template_type | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | unmeasured (no gold positives) |
-| donor_sequence | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | unmeasured (no gold positives) |
-| animal_strain | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | unmeasured (no gold positives) |
-| n_animals | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | unmeasured (no gold positives) |
-| animal_sex | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | unmeasured (no gold positives) |
-| guide_strand | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| genomic_coordinates | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| cas_variant | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| selection_method | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| reported_editing_efficiency | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| clone_isolation | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| off_target_sites_tested | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| antibody_rrid | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| plasmid_rrid | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| guide_design_software | 30 | 30 | 2 | 0 | 0.938 | 1.000 | 0.968 | measured |
-| harvest_timepoint | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| culture_conditions | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| statistical_test | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
-| karyotype_or_cn_check | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | measured |
+| field | gold+ | TP | FP | FN | precision | recall | F1 | regex F1 | agreement ceiling | decision |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| target_gene | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| species | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| genome_build | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| cas_nuclease | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| guide_sequence | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| pam_motif | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| delivery_method | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| cell_line_or_organism | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| editing_assay | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| n_biological_replicates | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| nontargeting_control | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| off_target_analysis_method | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| cell_line_rrid | 40 | 40 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| donor_template_type | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | 0.000 | 1.000 | unmeasured (no gold positives) |
+| donor_sequence | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | 0.000 | 1.000 | unmeasured (no gold positives) |
+| animal_strain | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | 0.000 | 1.000 | unmeasured (no gold positives) |
+| n_animals | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | 0.000 | 1.000 | unmeasured (no gold positives) |
+| animal_sex | 0 | 0 | 0 | 0 | 0.000 | 0.000 | 0.000 | 0.000 | 1.000 | unmeasured (no gold positives) |
+| guide_strand | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| genomic_coordinates | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| cas_variant | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| selection_method | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| reported_editing_efficiency | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| clone_isolation | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| off_target_sites_tested | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| antibody_rrid | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 0.800 | measured |
+| plasmid_rrid | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| guide_design_software | 30 | 30 | 2 | 0 | 0.938 | 1.000 | 0.968 | 0.968 | 1.000 | measured |
+| harvest_timepoint | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| culture_conditions | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 0.800 | measured |
+| statistical_test | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 | measured |
+| karyotype_or_cn_check | 30 | 30 | 0 | 0 | 1.000 | 1.000 | 1.000 | 1.000 | 0.800 | measured |
 
-Decision: **Median field F1 is 1.000 (>= 0.70). A completeness leaderboard on this extractor is defensible on the probe set.**
+Decision: **Median field F1 is 1.000 (>= 0.70). Regex-only baseline median F1 is 1.000. Self-agreement ceiling (median per-field value agreement) is 1.000. A completeness leaderboard on this extractor is defensible on the probe set.**
 
 Live-model quality on PMC OA: **unmeasured**. The measurement that would
 settle it is the same schema on 50 hand-annotated OA papers.
@@ -190,7 +190,7 @@ cl100k_base).
 Decision: **Default extraction model: gemini-2.0-flash ($0.000345/paper). Escalate to a larger tier only when the cache miss fails span-grounded validation.**
 
 API round-trip latency: **unmeasured**. Local render+tokenize was
-8.54 ms total.
+8.50 ms total.
 
 Options for storage: JSONL of extractions; DuckDB; a live warehouse.
 
@@ -226,7 +226,7 @@ designed cases.
 
 Phase 0 median field F1 against the designed probe set: 1.000.
 
-Median field F1 is 1.000 (>= 0.70). A completeness leaderboard on this extractor is defensible on the probe set.
+Median field F1 is 1.000 (>= 0.70). Regex-only baseline median F1 is 1.000. Self-agreement ceiling (median per-field value agreement) is 1.000. A completeness leaderboard on this extractor is defensible on the probe set.
 
 Annotator value agreement (accuracy ceiling): 0.981.
 
@@ -239,7 +239,7 @@ regex plus a committed cache. Numbers:
 
 - Mean input tokens / paper: 247.5
 - Cheapest / paper: Default extraction model: gemini-2.0-flash ($0.000345/paper). Escalate to a larger tier only when the cache miss fails span-grounded validation.
-- Local tokenize time: 8.54 ms (0.17 ms/paper)
+- Local tokenize time: 8.50 ms (0.17 ms/paper)
 - API RTT: unmeasured
 - Human annotation minutes per paper: unmeasured
 
@@ -269,13 +269,14 @@ as seconds and peak RSS.
 
 | Phase | Deliverable | Status |
 | --- | --- | --- |
-| 0 | Research memo and harnesses | In review — docs/phase-0/research-memo.md |
-| 1 | Architecture, schemas, data contracts | Not started |
-| 2 | First vertical slice (`methods-audit extract`, cache, checks) | Not started |
-| 3 | Evaluation, demo recordings, PMC OA slice | Not started |
+| 0 | Research memo and harnesses | Merged — docs/phase-0/research-memo.md |
+| 1 | Architecture, schemas, data contracts | Merged — docs/ARCHITECTURE.md |
+| 2 | First vertical slice (`extract`, `score`, `check`) | Merged |
+| 3 | Evaluation, demo recordings, per-field F1 | Merged — demo/*.cast |
 
-Phase 0 does not include a live PMC ingest, a FastAPI service, or
-asciinema recordings. Those start after this memo is reviewed.
+Live PMC OA ingest remains unmeasured. The vertical slice runs on the
+five committed samples. Recordings are `demo/01-extract-with-spans.cast`,
+`demo/02-consistency-checks.cast`, `demo/03-per-field-eval.cast`.
 
 ### Highest-risk technical unknowns going into Phase 1
 
