@@ -1,7 +1,8 @@
 {
-  "decision": "Median field F1 is 1.000 (>= 0.70). A completeness leaderboard on this extractor is defensible on the probe set.",
+  "decision": "Median field F1 is 1.000 (>= 0.70). Regex-only baseline median F1 is 1.000. Self-agreement ceiling (median per-field value agreement) is 1.000. A completeness leaderboard on this extractor is defensible on the probe set.",
   "fields": {
     "animal_sex": {
+      "agreement_ceiling": 1.0,
       "decision": "unmeasured (no gold positives)",
       "f1": 0.0,
       "fn": 0,
@@ -9,10 +10,14 @@
       "gold_positive": 0,
       "precision": 0.0,
       "recall": 0.0,
+      "regex_f1": 0.0,
+      "regex_precision": 0.0,
+      "regex_recall": 0.0,
       "tn": 50,
       "tp": 0
     },
     "animal_strain": {
+      "agreement_ceiling": 1.0,
       "decision": "unmeasured (no gold positives)",
       "f1": 0.0,
       "fn": 0,
@@ -20,10 +25,14 @@
       "gold_positive": 0,
       "precision": 0.0,
       "recall": 0.0,
+      "regex_f1": 0.0,
+      "regex_precision": 0.0,
+      "regex_recall": 0.0,
       "tn": 50,
       "tp": 0
     },
     "antibody_rrid": {
+      "agreement_ceiling": 0.8,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -31,10 +40,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "cas_nuclease": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -42,10 +55,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "cas_variant": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -53,10 +70,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "cell_line_or_organism": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -64,10 +85,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "cell_line_rrid": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -75,10 +100,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "clone_isolation": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -86,10 +115,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "culture_conditions": {
+      "agreement_ceiling": 0.8,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -97,10 +130,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "delivery_method": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -108,10 +145,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "donor_sequence": {
+      "agreement_ceiling": 1.0,
       "decision": "unmeasured (no gold positives)",
       "f1": 0.0,
       "fn": 0,
@@ -119,10 +160,14 @@
       "gold_positive": 0,
       "precision": 0.0,
       "recall": 0.0,
+      "regex_f1": 0.0,
+      "regex_precision": 0.0,
+      "regex_recall": 0.0,
       "tn": 50,
       "tp": 0
     },
     "donor_template_type": {
+      "agreement_ceiling": 1.0,
       "decision": "unmeasured (no gold positives)",
       "f1": 0.0,
       "fn": 0,
@@ -130,10 +175,14 @@
       "gold_positive": 0,
       "precision": 0.0,
       "recall": 0.0,
+      "regex_f1": 0.0,
+      "regex_precision": 0.0,
+      "regex_recall": 0.0,
       "tn": 50,
       "tp": 0
     },
     "editing_assay": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -141,10 +190,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "genome_build": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -152,10 +205,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "genomic_coordinates": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -163,10 +220,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "guide_design_software": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 0.967741935483871,
       "fn": 0,
@@ -174,10 +235,14 @@
       "gold_positive": 30,
       "precision": 0.9375,
       "recall": 1.0,
+      "regex_f1": 0.967741935483871,
+      "regex_precision": 0.9375,
+      "regex_recall": 1.0,
       "tn": 18,
       "tp": 30
     },
     "guide_sequence": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -185,10 +250,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "guide_strand": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -196,10 +265,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "harvest_timepoint": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -207,10 +280,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "karyotype_or_cn_check": {
+      "agreement_ceiling": 0.8,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -218,10 +295,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "n_animals": {
+      "agreement_ceiling": 1.0,
       "decision": "unmeasured (no gold positives)",
       "f1": 0.0,
       "fn": 0,
@@ -229,10 +310,14 @@
       "gold_positive": 0,
       "precision": 0.0,
       "recall": 0.0,
+      "regex_f1": 0.0,
+      "regex_precision": 0.0,
+      "regex_recall": 0.0,
       "tn": 50,
       "tp": 0
     },
     "n_biological_replicates": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -240,10 +325,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "nontargeting_control": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -251,10 +340,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "off_target_analysis_method": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -262,10 +355,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "off_target_sites_tested": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -273,10 +370,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "pam_motif": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -284,10 +385,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "plasmid_rrid": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -295,10 +400,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "reported_editing_efficiency": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -306,10 +415,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "selection_method": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -317,10 +430,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "species": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -328,10 +445,14 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     },
     "statistical_test": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -339,10 +460,14 @@
       "gold_positive": 30,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 20,
       "tp": 30
     },
     "target_gene": {
+      "agreement_ceiling": 1.0,
       "decision": "measured",
       "f1": 1.0,
       "fn": 0,
@@ -350,14 +475,20 @@
       "gold_positive": 40,
       "precision": 1.0,
       "recall": 1.0,
+      "regex_f1": 1.0,
+      "regex_precision": 1.0,
+      "regex_recall": 1.0,
       "tn": 10,
       "tp": 40
     }
   },
   "gold_source": "Designed PMC-OA-style methods snippets with gold spans. Not a live PMC dump.",
   "leaderboard_defensible": true,
+  "median_agreement_ceiling": 1.0,
   "median_field_f1": 1.0,
   "median_floor": 0.7,
+  "median_regex_f1": 1.0,
   "n_fields_measured": 27,
-  "n_papers": 50
+  "n_papers": 50,
+  "note": "System column is regex + committed cache. Cache keys are the five demo papers; on this 50-paper gold set a cache miss leaves the regex fill. Self-agreement is an accuracy ceiling, not a score."
 }

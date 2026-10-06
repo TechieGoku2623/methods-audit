@@ -6,7 +6,7 @@ guide_sequence; complementarity is a separate consistency check.
 
 from __future__ import annotations
 
-from methods_audit.fields import REQUIRED_ALWAYS
+from methods_audit.fields import CONDITIONAL, OPTIONAL, REQUIRED_ALWAYS
 from methods_audit.schemas import CompletenessScore, Extraction, SpanValue
 
 
@@ -59,11 +59,16 @@ def _filled(item: SpanValue | None) -> bool:
     return item is not None and item.filled()
 
 
+def _missing_named(extraction: Extraction, names: tuple[str, ...] | list[str]) -> list[str]:
+    return [name for name in names if not _filled(extraction.fields.get(name))]
+
+
 def score_completeness(extraction: Extraction) -> CompletenessScore:
     applicable = applicable_fields(extraction)
     missing = [name for name in applicable if not _filled(extraction.fields.get(name))]
     n_filled = len(applicable) - len(missing)
     completeness = n_filled / len(applicable) if applicable else 0.0
+    applicable_conditional = [name for name in CONDITIONAL if name in applicable]
     return CompletenessScore(
         paper_id=extraction.paper_id,
         n_applicable=len(applicable),
@@ -71,8 +76,12 @@ def score_completeness(extraction: Extraction) -> CompletenessScore:
         completeness=completeness,
         applicable_fields=applicable,
         missing_fields=missing,
+        missing_required=_missing_named(extraction, REQUIRED_ALWAYS),
+        missing_conditional=_missing_named(extraction, applicable_conditional),
+        missing_optional=_missing_named(extraction, OPTIONAL),
         rationale=(
             f"{n_filled}/{len(applicable)} applicable fields filled. "
-            "Optional fields are not in the denominator. Quality is not scored."
+            "Optional fields are not in the denominator. Quality is not scored. "
+            "Completeness is a factual claim about presence in the text."
         ),
     )

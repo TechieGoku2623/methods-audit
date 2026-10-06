@@ -38,6 +38,9 @@ class CompletenessScore(BaseModel):
     completeness: float
     applicable_fields: list[str]
     missing_fields: list[str]
+    missing_required: list[str] = Field(default_factory=list)
+    missing_conditional: list[str] = Field(default_factory=list)
+    missing_optional: list[str] = Field(default_factory=list)
     rationale: str
 
 
@@ -45,6 +48,14 @@ class ConsistencyCheck(BaseModel):
     name: str
     status: CheckStatus
     detail: str
+    left_field: str | None = None
+    left_quote: str | None = None
+    left_span: tuple[int, int] | None = None
+    right_field: str | None = None
+    right_quote: str | None = None
+    right_span: tuple[int, int] | None = None
+    alignment: str | None = None
+    identity_record: dict[str, str] | None = None
 
 
 class SamplePaper(BaseModel):

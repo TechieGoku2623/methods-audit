@@ -1,0 +1,10 @@
+{
+  "disclaimer": "Designed DOIs for the five committed sample papers only. Not Crossref records. Not a live DOI resolver.",
+  "dois": {
+    "10.0000/methods-audit.complete": "complete.xml",
+    "10.0000/methods-audit.no-guide": "no-guide.xml",
+    "10.0000/methods-audit.guide-mismatch": "guide-mismatch.xml",
+    "10.0000/methods-audit.bad-cell-line": "bad-cell-line.xml",
+    "10.0000/methods-audit.indirect": "indirect.xml"
+  }
+}

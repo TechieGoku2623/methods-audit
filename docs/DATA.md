@@ -5,6 +5,7 @@ committed objects are:
 
 - `data/sample/*.xml` — five designed methods sections (see
   `data/sample/README.md`)
+- `data/sample/doi_map.json` — five designed DOIs for `--doi` only
 - `data/sample/llm_cache.json` — committed response cache for those five
 - `data/sample/gene_sequences.json` — short designed windows for complementarity
 - `data/sample/cellosaurus_misidentified.json` — committed ICLAC-style list

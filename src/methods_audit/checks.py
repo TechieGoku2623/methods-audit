@@ -20,16 +20,24 @@ def hamming(left: str, right: str) -> int:
 
 
 def min_mismatch(guide: str, gene_seq: str) -> int | None:
+    aligned = best_alignment(guide, gene_seq)
+    return None if aligned is None else aligned[0]
+
+
+def best_alignment(guide: str, gene_seq: str) -> tuple[int, str, int, str] | None:
+    """Return (distance, strand, offset, window) for the best Hamming hit."""
+
     g = guide.upper().replace("U", "T")
     gene = gene_seq.upper().replace("U", "T")
     if len(g) > len(gene):
         return None
-    best: int | None = None
-    for probe in (g, reverse_complement(g)):
+    best: tuple[int, str, int, str] | None = None
+    for strand, probe in (("forward", g), ("reverse_complement", reverse_complement(g))):
         for i in range(0, len(gene) - len(probe) + 1):
-            dist = hamming(probe, gene[i : i + len(probe)])
-            if best is None or dist < best:
-                best = dist
+            window = gene[i : i + len(probe)]
+            dist = hamming(probe, window)
+            if best is None or dist < best[0]:
+                best = (dist, strand, i, window)
     return best
 
 
@@ -41,6 +49,14 @@ def load_gene_sequences(path: Path) -> dict[str, str]:
 def load_misidentified(path: Path) -> dict[str, dict[str, str]]:
     raw = json.loads(path.read_text(encoding="utf-8"))
     return {str(k): {str(a): str(b) for a, b in v.items()} for k, v in raw["lines"].items()}
+
+
+def _span_tuple(item: object) -> tuple[int, int] | None:
+    start = getattr(item, "start", None)
+    end = getattr(item, "end", None)
+    if start is None or end is None:
+        return None
+    return (int(start), int(end))
 
 
 def check_guide_targets_gene(
@@ -63,19 +79,43 @@ def check_guide_targets_gene(
             name="guide_targets_gene",
             status="skipped",
             detail=f"No committed sequence for gene {gene}.",
+            left_field="target_gene",
+            left_quote=gene_item.quote,
+            left_span=_span_tuple(gene_item),
+            right_field="guide_sequence",
+            right_quote=guide_item.quote,
+            right_span=_span_tuple(guide_item),
         )
-    dist = min_mismatch(guide, seq)
-    if dist is None:
+    aligned = best_alignment(guide, seq)
+    if aligned is None:
         return ConsistencyCheck(
             name="guide_targets_gene",
             status="fail",
             detail="Guide longer than committed gene sequence.",
+            left_field="target_gene",
+            left_quote=gene_item.quote,
+            left_span=_span_tuple(gene_item),
+            right_field="guide_sequence",
+            right_quote=guide_item.quote,
+            right_span=_span_tuple(guide_item),
         )
+    dist, strand, offset, window = aligned
+    alignment = (
+        f"guide={guide}  window={window}  strand={strand}  "
+        f"offset={offset}  Hamming={dist}  max_allowed={MAX_MISMATCH}"
+    )
     if dist <= MAX_MISMATCH:
         return ConsistencyCheck(
             name="guide_targets_gene",
             status="pass",
             detail=f"Guide aligns to {gene} with {dist} mismatch(es).",
+            left_field="target_gene",
+            left_quote=gene_item.quote,
+            left_span=_span_tuple(gene_item),
+            right_field="guide_sequence",
+            right_quote=guide_item.quote,
+            right_span=_span_tuple(guide_item),
+            alignment=alignment,
         )
     return ConsistencyCheck(
         name="guide_targets_gene",
@@ -84,6 +124,13 @@ def check_guide_targets_gene(
             f"Stated guide does not target stated gene {gene} "
             f"(best Hamming {dist} > {MAX_MISMATCH})."
         ),
+        left_field="target_gene",
+        left_quote=gene_item.quote,
+        left_span=_span_tuple(gene_item),
+        right_field="guide_sequence",
+        right_quote=guide_item.quote,
+        right_span=_span_tuple(guide_item),
+        alignment=alignment,
     )
 
 
@@ -105,6 +152,9 @@ def check_cell_line_identity(
             name="cell_line_identity",
             status="pass",
             detail=f"{name} is not on the committed Cellosaurus-style misidentification list.",
+            left_field="cell_line_or_organism",
+            left_quote=item.quote,
+            left_span=_span_tuple(item),
         )
     return ConsistencyCheck(
         name="cell_line_identity",
@@ -115,6 +165,10 @@ def check_cell_line_identity(
             f"actually {record.get('actually', '?')}; "
             f"source {record.get('source', '?')})."
         ),
+        left_field="cell_line_or_organism",
+        left_quote=item.quote,
+        left_span=_span_tuple(item),
+        identity_record=record,
     )
 
 

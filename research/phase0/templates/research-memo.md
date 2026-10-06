@@ -215,13 +215,14 @@ as seconds and peak RSS.
 
 | Phase | Deliverable | Status |
 | --- | --- | --- |
-| 0 | Research memo and harnesses | In review — docs/phase-0/research-memo.md |
-| 1 | Architecture, schemas, data contracts | Not started |
-| 2 | First vertical slice (`methods-audit extract`, cache, checks) | Not started |
-| 3 | Evaluation, demo recordings, PMC OA slice | Not started |
+| 0 | Research memo and harnesses | Merged — docs/phase-0/research-memo.md |
+| 1 | Architecture, schemas, data contracts | Merged — docs/ARCHITECTURE.md |
+| 2 | First vertical slice (`extract`, `score`, `check`) | Merged |
+| 3 | Evaluation, demo recordings, per-field F1 | Merged — demo/*.cast |
 
-Phase 0 does not include a live PMC ingest, a FastAPI service, or
-asciinema recordings. Those start after this memo is reviewed.
+Live PMC OA ingest remains unmeasured. The vertical slice runs on the
+five committed samples. Recordings are `demo/01-extract-with-spans.cast`,
+`demo/02-consistency-checks.cast`, `demo/03-per-field-eval.cast`.
 
 ### Highest-risk technical unknowns going into Phase 1
 

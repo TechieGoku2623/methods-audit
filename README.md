@@ -12,10 +12,10 @@ to infer, and deterministic completeness scoring plus the cross-checks
 
 | Phase | Deliverable | Status |
 | --- | --- | --- |
-| 0 | Research memo and harnesses | In review — docs/phase-0/research-memo.md |
-| 1 | Architecture, schemas, data contracts | Not started |
-| 2 | First vertical slice | Not started |
-| 3 | Evaluation and demo | Not started |
+| 0 | Research memo and harnesses | Merged — docs/phase-0/research-memo.md |
+| 1 | Architecture, schemas, data contracts | Merged — docs/ARCHITECTURE.md |
+| 2 | First vertical slice | Merged — `extract` / `score` / `check` |
+| 3 | Evaluation and demo | Merged — demo/*.cast |
 
 Status values: Not started / In progress / In review / Merged.
 
@@ -28,103 +28,234 @@ not produce a span-cited extraction, and they do not catch a complete
 report whose guide does not target the stated gene.
 
 PubTator will happily invent a gene mention. This repo will not. Unfilled
-fields stay missing. Completeness is presence over the schema, not quality.
-The findings that matter on the designed set are the cross-checks.
+fields stay missing. Completeness is a factual claim about presence in
+the text, not quality. The findings that matter on the designed set are
+the cross-checks.
 
 This is research / decision-support tooling. It is not a misconduct
-determination and not a recommendation to retract. Phase 0 records are
-designed snippets, not a live PMC OA dump.
+determination and not a recommendation to retract. Records are designed
+snippets, not a live PMC OA dump. See `docs/METHODOLOGY.md`.
 
 ## Walkthrough
 
-Phase 0 ships the designed sample set and the measurement harnesses. The
-`methods-audit extract` commands below are reserved for Phase 2; running
-them now is not implemented on purpose.
-
-### Step 1 — designed sample set
+No credentials. `make demo` runs the full extract/score/check walkthrough
+on the five committed samples. Commands below are the same steps, captured
+as real stdout.
 
 ```bash
 make setup && make demo
 ```
 
-`make demo` calls `methods-audit demo-plan`. Actual stdout:
-
-```
-methods-audit designed sample methods sections
-
-S1-complete  complete.xml
-  path:     thoroughly reported methods section; most required fields present
-  expected: Extractor fills most required fields from spans. Completeness is high. Guide matches TP53. Cell line is not on the misidentification list.
-
-S2-no-guide  no-guide.xml
-  path:     missing guide sequence — the most common omission
-  expected: guide_sequence stays missing. Completeness drops. Guide-target check is skipped, not guessed.
-
-S3-guide-mismatch  guide-mismatch.xml
-  path:     stated guide does not target the stated gene
-  expected: guide_sequence is filled (AATTCCCGTCGCTATCAAGG). Complementarity check FAILs against TP53. Completeness still counts the field as present.
-
-S4-bad-cell-line  bad-cell-line.xml
-  path:     cell line on the committed Cellosaurus-style misidentification list
-  expected: cell_line_or_organism = INT-407. cell_line_identity FAILs. Completeness may still be high.
-
-S5-indirect  indirect.xml
-  path:     information present only as 'as previously described' — extraction must fail
-  expected: Required fields stay missing. Cache quotes are empty. Completeness is low. No hallucinated gene, guide, or cell line.
-```
-
-The records are designed: complete, no guide, guide mismatch, misidentified
-line, and indirect. See `data/sample/README.md`.
-
-Recordings `demo/01-extract.cast` land in Phase 3.
-
-### Step 2 — complete report (Phase 2)
+### Step 1 — extract with every field and span
 
 ```bash
-methods-audit extract --xml data/sample/complete.xml --explain
+methods-audit extract --paper data/sample/complete.xml
 ```
 
-Reserved. Sample S1. The spans are the product, not the completeness number.
+Actual stdout:
 
-### Step 3 — missing guide (Phase 2)
+```
+complete  /agent/repos/methods-audit/data/sample/complete.xml
+every field (unfilled = missing; nothing is inferred):
 
-```bash
-methods-audit extract --xml data/sample/no-guide.xml --explain
+  target_gene                   filled   TP53  source=regex  span=133-137  
+quote='TP53'
+  species                       filled   Homo sapiens  source=regex  
+span=147-159  quote='Homo sapiens'
+  genome_build                  filled   GRCh38  source=regex  span=161-167  
+quote='GRCh38'
+  cas_nuclease                  filled   SpCas9  source=regex  span=204-210  
+quote='SpCas9'
+  guide_sequence                filled   GGCGCCATCTACAAGCAGTC  source=regex  
+span=257-277  quote='GGCGCCATCTACAAGCAGTC'
+  pam_motif                     filled   NGG  source=regex  span=320-323  
+quote='NGG'
+  delivery_method               filled   Ribonucleoprotein  source=regex  
+span=366-383  quote='Ribonucleoprotein'
+  cell_line_or_organism         filled   HEK293T  source=regex  span=433-440  
+quote='HEK293T'
+  editing_assay                 filled   amplicon NGS  source=regex  
+span=585-597  quote='amplicon NGS'
+  n_biological_replicates       filled   3  source=regex  span=636-637  
+quote='3'
+  nontargeting_control          filled   non-targeting sgRNA  source=regex  
+span=527-546  quote='non-targeting sgRNA'
+  off_target_analysis_method    filled   CRISPOR  source=regex  span=351-358  
+quote='CRISPOR'
+  cell_line_rrid                filled   RRID:CVCL_0063  source=regex  
+span=454-468  quote='RRID:CVCL_0063'
+  donor_template_type           missing
+  donor_sequence                missing
+  animal_strain                 missing
+  n_animals                     missing
+  animal_sex                    missing
+  guide_strand                  filled   Watson  source=regex  span=294-300  
+quote='Watson'
+  genomic_coordinates           filled   chr17:7676594-7676613  source=regex  
+span=169-190  quote='chr17:7676594-7676613'
+  cas_variant                   filled   eSpCas9  source=regex  span=220-227  
+quote='eSpCas9'
+  selection_method              filled   puromycin  source=regex  span=792-801  
+quote='puromycin'
+  reported_editing_efficiency   missing
+  clone_isolation               filled   Single-cell clones  source=regex  
+span=747-765  quote='Single-cell clones'
+  off_target_sites_tested       filled   8  source=regex  span=704-705  
+quote='8'
+  antibody_rrid                 filled   RRID:AB_331743  source=regex  
+span=908-922  quote='RRID:AB_331743'
+  plasmid_rrid                  filled   Addgene 62988  source=regex  
+span=877-890  quote='Addgene 62988'
+  guide_design_software         filled   CRISPOR  source=regex  span=351-358  
+quote='CRISPOR'
+  harvest_timepoint             missing
+  culture_conditions            filled   DMEM with 10% FBS at 37 °C  
+source=regex  span=491-517  quote='DMEM with 10% FBS at 37 °C'
+  statistical_test              filled   Student's t-test  source=regex  
+span=970-986  quote="Student's t-test"
+  karyotype_or_cn_check         filled   karyotyped  source=regex  
+span=1000-1010  quote='karyotyped'
+
+Research tool only. Completeness scoring is not a judgment of experimental 
+quality or of whether a paper should have been published. Phase 0 records are 
+designed synthetic methods snippets, not a live PMC OA dump. Unfilled fields are
+missing, never inferred.
 ```
 
-Reserved. Sample S2. Inventing a protospacer is a bug.
-
-### Step 4 — inconsistency (Phase 2)
+### Step 2 — score a missing guide
 
 ```bash
-methods-audit extract --xml data/sample/guide-mismatch.xml --explain
-methods-audit extract --xml data/sample/bad-cell-line.xml --explain
+methods-audit score --paper data/sample/no-guide.xml
 ```
 
-Reserved. Completeness can be high. The checks must fail.
+`methods-audit score --doi 10.0000/methods-audit.no-guide` resolves the
+same file from the committed five-sample DOI map.
 
-### Step 5 — refusal, then the measured baseline
+Actual stdout:
+
+```
+no-guide  /agent/repos/methods-audit/data/sample/no-guide.xml
+completeness:  0.923  (12/13 applicable fields filled)
+12/13 applicable fields filled. Optional fields are not in the denominator. 
+Quality is not scored. Completeness is a factual claim about presence in the 
+text.
+
+missing by need (unfilled = missing; optional not in the denominator):
+  required:     guide_sequence
+  conditional:  (none)
+  optional:     guide_strand, genomic_coordinates, cas_variant, 
+selection_method, reported_editing_efficiency, clone_isolation, 
+off_target_sites_tested, antibody_rrid, plasmid_rrid, karyotype_or_cn_check
+
+applicable fields:
+  target_gene                   filled   need=required
+  species                       filled   need=required
+  genome_build                  filled   need=required
+  cas_nuclease                  filled   need=required
+  guide_sequence                missing  need=required
+  pam_motif                     filled   need=required
+  delivery_method               filled   need=required
+  cell_line_or_organism         filled   need=required
+  editing_assay                 filled   need=required
+  n_biological_replicates       filled   need=required
+  nontargeting_control          filled   need=required
+  off_target_analysis_method    filled   need=required
+  cell_line_rrid                filled   need=conditional
+
+Research tool only. Completeness scoring is not a judgment of experimental 
+quality or of whether a paper should have been published. Phase 0 records are 
+designed synthetic methods snippets, not a live PMC OA dump. Unfilled fields are
+missing, never inferred.
+```
+
+### Step 3 — guide does not target gene
 
 ```bash
-methods-audit extract --xml data/sample/indirect.xml
+methods-audit check --paper data/sample/guide-mismatch.xml
+```
+
+Actual stdout:
+
+```
+guide-mismatch  /agent/repos/methods-audit/data/sample/guide-mismatch.xml
+completeness: 1.000 (presence only; not a quality or misconduct score)
+
+guide_targets_gene  FAIL
+  detail:     Stated guide does not target stated gene TP53 (best Hamming 11 > 
+2).
+  target_gene span:  quote='TP53'  span=133-137
+  guide_sequence span:  quote='AATTCCCGTCGCTATCAAGG'  span=216-236
+  alignment:  guide=AATTCCCGTCGCTATCAAGG  window=CACAGCACATGACGGAGGTT  
+strand=reverse_complement  offset=33  Hamming=11  max_allowed=2
+
+cell_line_identity  PASS
+  detail:     HeLa is not on the committed Cellosaurus-style misidentification 
+list.
+  cell_line_or_organism span:  quote='HeLa'  span=306-310
+
+
+Research tool only. Completeness scoring is not a judgment of experimental 
+quality or of whether a paper should have been published. Phase 0 records are 
+designed synthetic methods snippets, not a live PMC OA dump. Unfilled fields are
+missing, never inferred.
+```
+
+### Step 4 — Cellosaurus identity, then eval
+
+```bash
+methods-audit check --paper data/sample/bad-cell-line.xml
 make eval
 ```
 
-`methods-audit extract` on S5 is reserved (missing, not a guess).
-`make eval` already runs: it regenerates `docs/EVALUATION.md` from the Phase
-0 harnesses. The median field F1 in Results is that output.
+Actual stdout of `check`:
+
+```
+bad-cell-line  /agent/repos/methods-audit/data/sample/bad-cell-line.xml
+completeness: 1.000 (presence only; not a quality or misconduct score)
+
+guide_targets_gene  PASS
+  detail:     Guide aligns to CFTR with 0 mismatch(es).
+  target_gene span:  quote='CFTR'  span=133-137
+  guide_sequence span:  quote='ATGGCGCTCTGGGCCTGTTC'  span=212-232
+  alignment:  guide=ATGGCGCTCTGGGCCTGTTC  window=ATGGCGCTCTGGGCCTGTTC  
+strand=forward  offset=2  Hamming=0  max_allowed=2
+
+cell_line_identity  FAIL
+  detail:     INT-407 is listed as misidentified (reported as embryonic 
+intestinal epithelium; actually HeLa; source ICLAC / Cellosaurus CVCL_1903).
+  cell_line_or_organism span:  quote='INT-407'  span=298-305
+  Cellosaurus / ICLAC identity record:
+    reported_as:  embryonic intestinal epithelium
+    actually:     HeLa
+    source:       ICLAC / Cellosaurus CVCL_1903
+
+
+Research tool only. Completeness scoring is not a judgment of experimental 
+quality or of whether a paper should have been published. Phase 0 records are 
+designed synthetic methods snippets, not a live PMC OA dump. Unfilled fields are
+missing, never inferred.
+```
+
+`make eval` regenerates `docs/EVALUATION.md`: per-field F1 vs gold, a
+regex-only baseline column, and the self-agreement ceiling. Completeness
+is not quality. Unfilled stays missing.
+
+Recordings: `demo/01-extract-with-spans.cast`,
+`demo/02-consistency-checks.cast`, `demo/03-per-field-eval.cast`.
 
 ## Layout
 
 Read in this order:
 
-1. `docs/phase-0/research-memo.md` — why the schema and the failure condition
-2. `data/sample/README.md` — why each demo file exists
-3. `src/methods_audit/fields.py` — the 32-field schema
-4. `src/methods_audit/extract.py` — regex + cache, quote or missing
-5. `src/methods_audit/checks.py` — guide complementarity and cell-line identity
-6. `research/phase0/` — the three measurements behind the memo
-7. `src/methods_audit/cli.py` — demo-plan only, until Phase 2
+1. `docs/METHODOLOGY.md` — what a number is allowed to mean
+2. `docs/ARCHITECTURE.md` — schema, spans, DOI map
+3. `docs/phase-0/research-memo.md` — why the schema and the failure condition
+4. `data/sample/README.md` — why each demo file exists
+5. `src/methods_audit/fields.py` — the 32-field schema
+6. `src/methods_audit/extract.py` — regex + cache, quote or missing
+7. `src/methods_audit/checks.py` — guide complementarity and cell-line identity
+8. `research/phase0/` — the three measurements behind the memo
+9. `src/methods_audit/cli.py` — `extract`, `score`, `check`, `demo`
 
 ## Results
 
@@ -151,12 +282,8 @@ flowchart LR
     extract --> fields[SpanValue per field]
     fields --> score[score_completeness]
     fields --> checks[guide vs gene / cell line]
-    subgraph later [Phase 2 nodes, not built]
-      llm[live LLM on cache miss]
-      pmc[PMC OA ingest]
-    end
-    xml -.-> pmc
-    extract -.-> llm
+    doi[doi_map five samples] --> extract
+    fields --> cli[extract / score / check CLI]
 ```
 
 A field is `filled` only when `quote` occurs in the source. Completeness
@@ -176,20 +303,21 @@ not in the denominator. Quality is not scored.
 ## 🛡️ Edge Cases & Failure Modes
 
 - Missing guide: field stays missing; check skipped (S2).
-- Guide does not target gene: field filled; check fails (S3).
-- INT-407: completeness may be high; identity check fails (S4).
+- Guide does not target gene: field filled; check fails; both spans printed (S3).
+- INT-407: completeness may be high; identity check fails with the ICLAC record (S4).
 - "As previously described": nothing filled (S5).
 - Cache quote not in the XML: ignored.
 - HDR / in-vivo conditionals attach only to extracted triggers.
 - Unknown gene symbol: guide check skipped, not guessed.
+- `--doi` outside the five-sample map: fail closed.
 - Live Cellosaurus synonyms: unmeasured.
 
 ## Limitations
 
 This is not a misconduct engine. It does not replace a methods reviewer.
-Phase 0 extracts designed snippets, not PMC OA. Completeness is not
-quality. No demo recording is committed. Genome-wide off-target search is
-not implemented.
+The extractor reads designed snippets, not PMC OA. Completeness is not
+quality. Genome-wide off-target search is not implemented. See
+`docs/METHODOLOGY.md`.
 
 ## License and citation
 
