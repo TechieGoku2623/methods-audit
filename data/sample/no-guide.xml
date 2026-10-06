@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <sec sec-type="methods">
+    <title>Methods</title>
+    <p>
+      We targeted the EGFR locus in Homo sapiens (GRCh38) using Cas9.
+      The PAM motif was NGG. Guides were designed with CHOPCHOP.
+      Lentivirus delivered the editor into K562 cells (RRID:CVCL_0004).
+      A non-targeting control was included. Editing was measured by T7E1
+      (n = 3 biological replicates). Off-target analysis used Cas-OFFinder.
+      Cells were harvested 48 hours after transduction. Culture used RPMI
+      at 37 °C. Statistics used one-way ANOVA.
+    </p>
+  </sec>
+</article>

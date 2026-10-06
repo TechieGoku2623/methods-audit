@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <sec sec-type="methods">
+    <title>Methods</title>
+    <p>
+      We targeted the CFTR locus in Homo sapiens (hg38) using Cas9.
+      The guide RNA sequence was ATGGCGCTCTGGGCCTGTTC. The PAM motif was NGG.
+      Electroporation delivered RNP into INT-407 cells (RRID:CVCL_1903).
+      A non-targeting sgRNA was included. Editing was measured by ICE
+      (n = 4 biological replicates). Off-target analysis used in silico off-target
+      prediction with CRISPOR. Culture used DMEM at 37 °C.
+    </p>
+  </sec>
+</article>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <sec sec-type="methods">
+    <title>Methods</title>
+    <p>
+      We targeted the TP53 locus in Homo sapiens (GRCh38, chr17:7676594-7676613)
+      using SpCas9 (variant eSpCas9). The guide RNA sequence was GGCGCCATCTACAAGCAGTC
+      on strand Watson. The PAM motif was NGG. Guides were designed with CRISPOR.
+      Ribonucleoprotein complexes were delivered by electroporation into HEK293T
+      cells (RRID:CVCL_0063). Cells were grown in DMEM with 10% FBS at 37 °C.
+      A non-targeting sgRNA was included. Editing was measured by amplicon NGS
+      at 72 hours after delivery (n = 3 biological replicates). Off-target analysis
+      used GUIDE-seq; 8 nominated off-target sites were assayed. Single-cell clones
+      were isolated after puromycin selection. Reported editing efficiency was 64%.
+      The Cas9 plasmid was Addgene 62988. A p53 antibody (RRID:AB_331743) confirmed
+      protein loss. Statistics used Student's t-test. Clones were karyotyped.
+    </p>
+  </sec>
+</article>

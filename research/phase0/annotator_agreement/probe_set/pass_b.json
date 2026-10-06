@@ -1,0 +1,4417 @@
+{
+  "disclaimer": "Two committed gold passes on 15 designed methods snippets. Not two live annotators of PMC OA.",
+  "n": 15,
+  "papers": [
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 733,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 719,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 517,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 510,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 256,
+          "field": "cell_line_or_organism",
+          "quote": "HEK293T",
+          "source": "gold",
+          "start": 249,
+          "status": "filled",
+          "value": "HEK293T"
+        },
+        "cell_line_rrid": {
+          "end": 272,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0063",
+          "source": "gold",
+          "start": 258,
+          "status": "filled",
+          "value": "RRID:CVCL_0063"
+        },
+        "clone_isolation": {
+          "end": 606,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 588,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 832,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 806,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 243,
+          "field": "delivery_method",
+          "quote": "electroporation",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "electroporation"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 347,
+          "field": "editing_assay",
+          "quote": "amplicon NGS",
+          "source": "gold",
+          "start": 335,
+          "status": "filled",
+          "value": "amplicon NGS"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 500,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 479,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 448,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 441,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "GGCGCCATCTACAAGCAGTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "GGCGCCATCTACAAGCAGTC"
+        },
+        "guide_strand": {
+          "end": 465,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 459,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 548,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 540,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 791,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 781,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 354,
+          "field": "n_biological_replicates",
+          "quote": "3",
+          "source": "gold",
+          "start": 353,
+          "status": "filled",
+          "value": "3"
+        },
+        "nontargeting_control": {
+          "end": 296,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 277,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 413,
+          "field": "off_target_analysis_method",
+          "quote": "GUIDE-seq",
+          "source": "gold",
+          "start": 404,
+          "status": "filled",
+          "value": "GUIDE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 637,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 635,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 708,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 695,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 633,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 630,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 564,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 555,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 767,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 751,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "TP53",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "TP53"
+        }
+      },
+      "paper_id": "A01",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the TP53 locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was GGCGCCATCTACAAGCAGTC. The PAM motif was NGG. Delivery used electroporation into HEK293T (RRID:CVCL_0063). A non-targeting sgRNA was included. Editing was measured by amplicon NGS (n = 3 biological replicates). Off-target analysis used GUIDE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 711,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 697,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 138,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 495,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 488,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 246,
+          "field": "cell_line_or_organism",
+          "quote": "K562",
+          "source": "gold",
+          "start": 242,
+          "status": "filled",
+          "value": "K562"
+        },
+        "cell_line_rrid": {
+          "end": 262,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0004",
+          "source": "gold",
+          "start": 248,
+          "status": "filled",
+          "value": "RRID:CVCL_0004"
+        },
+        "clone_isolation": {
+          "end": 584,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 566,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 810,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 784,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 236,
+          "field": "delivery_method",
+          "quote": "lentivirus",
+          "source": "gold",
+          "start": 226,
+          "status": "filled",
+          "value": "lentivirus"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 327,
+          "field": "editing_assay",
+          "quote": "T7E1",
+          "source": "gold",
+          "start": 323,
+          "status": "filled",
+          "value": "T7E1"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 478,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 457,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 391,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 187,
+          "field": "guide_sequence",
+          "quote": "AATTCCCGTCGCTATCAAGG",
+          "source": "gold",
+          "start": 167,
+          "status": "filled",
+          "value": "AATTCCCGTCGCTATCAAGG"
+        },
+        "guide_strand": {
+          "end": 443,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 437,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 526,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 518,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 769,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 759,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 334,
+          "field": "n_biological_replicates",
+          "quote": "4",
+          "source": "gold",
+          "start": 333,
+          "status": "filled",
+          "value": "4"
+        },
+        "nontargeting_control": {
+          "end": 284,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 267,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 391,
+          "field": "off_target_analysis_method",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "off_target_sites_tested": {
+          "end": 615,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 613,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 210,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 207,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 686,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 673,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 611,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 608,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 542,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 533,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 745,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 729,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "EGFR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "EGFR"
+        }
+      },
+      "paper_id": "A02",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the EGFR locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was AATTCCCGTCGCTATCAAGG. The PAM motif was NGG. Delivery used lentivirus into K562 (RRID:CVCL_0004). A scrambled control was included. Editing was measured by T7E1 (n = 4 biological replicates). Off-target analysis used CRISPOR. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 734,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 720,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 518,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 511,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 249,
+          "field": "cell_line_or_organism",
+          "quote": "HeLa",
+          "source": "gold",
+          "start": 245,
+          "status": "filled",
+          "value": "HeLa"
+        },
+        "cell_line_rrid": {
+          "end": 265,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0030",
+          "source": "gold",
+          "start": 251,
+          "status": "filled",
+          "value": "RRID:CVCL_0030"
+        },
+        "clone_isolation": {
+          "end": 607,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 589,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 833,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 807,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 239,
+          "field": "delivery_method",
+          "quote": "lipofection",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "lipofection"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 345,
+          "field": "editing_assay",
+          "quote": "Sanger sequencing",
+          "source": "gold",
+          "start": 328,
+          "status": "filled",
+          "value": "Sanger sequencing"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 501,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 480,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 449,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 442,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "ATGGCGCTCTGGGCCTGTTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "ATGGCGCTCTGGGCCTGTTC"
+        },
+        "guide_strand": {
+          "end": 466,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 460,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 549,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 541,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 792,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 782,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 352,
+          "field": "n_biological_replicates",
+          "quote": "5",
+          "source": "gold",
+          "start": 351,
+          "status": "filled",
+          "value": "5"
+        },
+        "nontargeting_control": {
+          "end": 289,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 270,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 414,
+          "field": "off_target_analysis_method",
+          "quote": "Cas-OFFinder",
+          "source": "gold",
+          "start": 402,
+          "status": "filled",
+          "value": "Cas-OFFinder"
+        },
+        "off_target_sites_tested": {
+          "end": 638,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 636,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 709,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 696,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 634,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 631,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 565,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 556,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 768,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 752,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "CFTR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "CFTR"
+        }
+      },
+      "paper_id": "A03",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the CFTR locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was ATGGCGCTCTGGGCCTGTTC. The PAM motif was NGG. Delivery used lipofection into HeLa (RRID:CVCL_0030). A non-targeting sgRNA was included. Editing was measured by Sanger sequencing (n = 5 biological replicates). Off-target analysis used Cas-OFFinder. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 705,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 691,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 137,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 133,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 489,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 482,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 238,
+          "field": "cell_line_or_organism",
+          "quote": "U2OS",
+          "source": "gold",
+          "start": 234,
+          "status": "filled",
+          "value": "U2OS"
+        },
+        "cell_line_rrid": {
+          "end": 254,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0042",
+          "source": "gold",
+          "start": 240,
+          "status": "filled",
+          "value": "RRID:CVCL_0042"
+        },
+        "clone_isolation": {
+          "end": 578,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 560,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 804,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 778,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 228,
+          "field": "delivery_method",
+          "quote": "RNP",
+          "source": "gold",
+          "start": 225,
+          "status": "filled",
+          "value": "RNP"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 318,
+          "field": "editing_assay",
+          "quote": "ICE",
+          "source": "gold",
+          "start": 315,
+          "status": "filled",
+          "value": "ICE"
+        },
+        "genome_build": {
+          "end": 125,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 119,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 472,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 451,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 420,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 413,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 186,
+          "field": "guide_sequence",
+          "quote": "GATGAAGTTGGTGGTGAGGC",
+          "source": "gold",
+          "start": 166,
+          "status": "filled",
+          "value": "GATGAAGTTGGTGGTGAGGC"
+        },
+        "guide_strand": {
+          "end": 437,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 431,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 520,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 512,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 763,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 753,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 325,
+          "field": "n_biological_replicates",
+          "quote": "3",
+          "source": "gold",
+          "start": 324,
+          "status": "filled",
+          "value": "3"
+        },
+        "nontargeting_control": {
+          "end": 276,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 259,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 385,
+          "field": "off_target_analysis_method",
+          "quote": "CIRCLE-seq",
+          "source": "gold",
+          "start": 375,
+          "status": "filled",
+          "value": "CIRCLE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 609,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 607,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 209,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 206,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 680,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 667,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 605,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 602,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 536,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 527,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 117,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 105,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 739,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 723,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 95,
+          "field": "target_gene",
+          "quote": "HBB",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "HBB"
+        }
+      },
+      "paper_id": "A04",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the HBB locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was GATGAAGTTGGTGGTGAGGC. The PAM motif was NGG. Delivery used RNP into U2OS (RRID:CVCL_0042). A scrambled control was included. Editing was measured by ICE (n = 3 biological replicates). Off-target analysis used CIRCLE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 733,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 719,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 517,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 510,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 256,
+          "field": "cell_line_or_organism",
+          "quote": "HEK293T",
+          "source": "gold",
+          "start": 249,
+          "status": "filled",
+          "value": "HEK293T"
+        },
+        "cell_line_rrid": {
+          "end": 272,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0063",
+          "source": "gold",
+          "start": 258,
+          "status": "filled",
+          "value": "RRID:CVCL_0063"
+        },
+        "clone_isolation": {
+          "end": 606,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 588,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 832,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 806,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 243,
+          "field": "delivery_method",
+          "quote": "electroporation",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "electroporation"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 347,
+          "field": "editing_assay",
+          "quote": "amplicon NGS",
+          "source": "gold",
+          "start": 335,
+          "status": "filled",
+          "value": "amplicon NGS"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 500,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 479,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 448,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 441,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "GGCGCCATCTACAAGCAGTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "GGCGCCATCTACAAGCAGTC"
+        },
+        "guide_strand": {
+          "end": 465,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 459,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 548,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 540,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 791,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 781,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 354,
+          "field": "n_biological_replicates",
+          "quote": "4",
+          "source": "gold",
+          "start": 353,
+          "status": "filled",
+          "value": "4"
+        },
+        "nontargeting_control": {
+          "end": 296,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 277,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 413,
+          "field": "off_target_analysis_method",
+          "quote": "GUIDE-seq",
+          "source": "gold",
+          "start": 404,
+          "status": "filled",
+          "value": "GUIDE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 637,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 635,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 708,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 695,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 633,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 630,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 564,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 555,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 767,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 751,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "TP53",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "TP53"
+        }
+      },
+      "paper_id": "A05",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the TP53 locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was GGCGCCATCTACAAGCAGTC. The PAM motif was NGG. Delivery used electroporation into HEK293T (RRID:CVCL_0063). A non-targeting sgRNA was included. Editing was measured by amplicon NGS (n = 4 biological replicates). Off-target analysis used GUIDE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 711,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 697,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 138,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 495,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 488,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 246,
+          "field": "cell_line_or_organism",
+          "quote": "K562",
+          "source": "gold",
+          "start": 242,
+          "status": "filled",
+          "value": "K562"
+        },
+        "cell_line_rrid": {
+          "end": 262,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0004",
+          "source": "gold",
+          "start": 248,
+          "status": "filled",
+          "value": "RRID:CVCL_0004"
+        },
+        "clone_isolation": {
+          "end": 584,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 566,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 810,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 784,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 236,
+          "field": "delivery_method",
+          "quote": "lentivirus",
+          "source": "gold",
+          "start": 226,
+          "status": "filled",
+          "value": "lentivirus"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 327,
+          "field": "editing_assay",
+          "quote": "T7E1",
+          "source": "gold",
+          "start": 323,
+          "status": "filled",
+          "value": "T7E1"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 478,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 457,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 391,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 187,
+          "field": "guide_sequence",
+          "quote": "AATTCCCGTCGCTATCAAGG",
+          "source": "gold",
+          "start": 167,
+          "status": "filled",
+          "value": "AATTCCCGTCGCTATCAAGG"
+        },
+        "guide_strand": {
+          "end": 443,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 437,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 526,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 518,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 769,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 759,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 334,
+          "field": "n_biological_replicates",
+          "quote": "5",
+          "source": "gold",
+          "start": 333,
+          "status": "filled",
+          "value": "5"
+        },
+        "nontargeting_control": {
+          "end": 284,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 267,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 391,
+          "field": "off_target_analysis_method",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "off_target_sites_tested": {
+          "end": 615,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 613,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 210,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 207,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 686,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 673,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 611,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 608,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 542,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 533,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 745,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 729,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "EGFR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "EGFR"
+        }
+      },
+      "paper_id": "A06",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the EGFR locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was AATTCCCGTCGCTATCAAGG. The PAM motif was NGG. Delivery used lentivirus into K562 (RRID:CVCL_0004). A scrambled control was included. Editing was measured by T7E1 (n = 5 biological replicates). Off-target analysis used CRISPOR. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 734,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 720,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 518,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 511,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 249,
+          "field": "cell_line_or_organism",
+          "quote": "HeLa",
+          "source": "gold",
+          "start": 245,
+          "status": "filled",
+          "value": "HeLa"
+        },
+        "cell_line_rrid": {
+          "end": 265,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0030",
+          "source": "gold",
+          "start": 251,
+          "status": "filled",
+          "value": "RRID:CVCL_0030"
+        },
+        "clone_isolation": {
+          "end": 607,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 589,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 833,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 807,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 239,
+          "field": "delivery_method",
+          "quote": "lipofection",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "lipofection"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 345,
+          "field": "editing_assay",
+          "quote": "Sanger sequencing",
+          "source": "gold",
+          "start": 328,
+          "status": "filled",
+          "value": "Sanger sequencing"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 501,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 480,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 449,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 442,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "ATGGCGCTCTGGGCCTGTTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "ATGGCGCTCTGGGCCTGTTC"
+        },
+        "guide_strand": {
+          "end": 466,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 460,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 549,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 541,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 792,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 782,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 352,
+          "field": "n_biological_replicates",
+          "quote": "3",
+          "source": "gold",
+          "start": 351,
+          "status": "filled",
+          "value": "3"
+        },
+        "nontargeting_control": {
+          "end": 289,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 270,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 414,
+          "field": "off_target_analysis_method",
+          "quote": "Cas-OFFinder",
+          "source": "gold",
+          "start": 402,
+          "status": "filled",
+          "value": "Cas-OFFinder"
+        },
+        "off_target_sites_tested": {
+          "end": 638,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 636,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 709,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 696,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 634,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 631,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 565,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 556,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 768,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 752,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "CFTR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "CFTR"
+        }
+      },
+      "paper_id": "A07",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the CFTR locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was ATGGCGCTCTGGGCCTGTTC. The PAM motif was NGG. Delivery used lipofection into HeLa (RRID:CVCL_0030). A non-targeting sgRNA was included. Editing was measured by Sanger sequencing (n = 3 biological replicates). Off-target analysis used Cas-OFFinder. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 705,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 691,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 137,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 133,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 489,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 482,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 238,
+          "field": "cell_line_or_organism",
+          "quote": "U2OS",
+          "source": "gold",
+          "start": 234,
+          "status": "filled",
+          "value": "U2OS"
+        },
+        "cell_line_rrid": {
+          "end": 254,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0042",
+          "source": "gold",
+          "start": 240,
+          "status": "filled",
+          "value": "RRID:CVCL_0042"
+        },
+        "clone_isolation": {
+          "end": 578,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 560,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 804,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 778,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 228,
+          "field": "delivery_method",
+          "quote": "RNP",
+          "source": "gold",
+          "start": 225,
+          "status": "filled",
+          "value": "RNP"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 318,
+          "field": "editing_assay",
+          "quote": "ICE",
+          "source": "gold",
+          "start": 315,
+          "status": "filled",
+          "value": "ICE"
+        },
+        "genome_build": {
+          "end": 125,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 119,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 472,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 451,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 420,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 413,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 186,
+          "field": "guide_sequence",
+          "quote": "GATGAAGTTGGTGGTGAGGC",
+          "source": "gold",
+          "start": 166,
+          "status": "filled",
+          "value": "GATGAAGTTGGTGGTGAGGC"
+        },
+        "guide_strand": {
+          "end": 437,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 431,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 520,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 512,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 763,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 753,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 325,
+          "field": "n_biological_replicates",
+          "quote": "4",
+          "source": "gold",
+          "start": 324,
+          "status": "filled",
+          "value": "4"
+        },
+        "nontargeting_control": {
+          "end": 276,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 259,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 385,
+          "field": "off_target_analysis_method",
+          "quote": "CIRCLE-seq",
+          "source": "gold",
+          "start": 375,
+          "status": "filled",
+          "value": "CIRCLE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 609,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 607,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 209,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 206,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 680,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 667,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 605,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 602,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 536,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 527,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 117,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 105,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 739,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 723,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 95,
+          "field": "target_gene",
+          "quote": "HBB",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "HBB"
+        }
+      },
+      "paper_id": "A08",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the HBB locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was GATGAAGTTGGTGGTGAGGC. The PAM motif was NGG. Delivery used RNP into U2OS (RRID:CVCL_0042). A scrambled control was included. Editing was measured by ICE (n = 4 biological replicates). Off-target analysis used CIRCLE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 733,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 719,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 517,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 510,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 256,
+          "field": "cell_line_or_organism",
+          "quote": "HEK293T",
+          "source": "gold",
+          "start": 249,
+          "status": "filled",
+          "value": "HEK293T"
+        },
+        "cell_line_rrid": {
+          "end": 272,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0063",
+          "source": "gold",
+          "start": 258,
+          "status": "filled",
+          "value": "RRID:CVCL_0063"
+        },
+        "clone_isolation": {
+          "end": 606,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 588,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 832,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 806,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 243,
+          "field": "delivery_method",
+          "quote": "electroporation",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "electroporation"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 347,
+          "field": "editing_assay",
+          "quote": "amplicon NGS",
+          "source": "gold",
+          "start": 335,
+          "status": "filled",
+          "value": "amplicon NGS"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 500,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 479,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 448,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 441,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "GGCGCCATCTACAAGCAGTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "GGCGCCATCTACAAGCAGTC"
+        },
+        "guide_strand": {
+          "end": 465,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 459,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 548,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 540,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 791,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 781,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 354,
+          "field": "n_biological_replicates",
+          "quote": "5",
+          "source": "gold",
+          "start": 353,
+          "status": "filled",
+          "value": "5"
+        },
+        "nontargeting_control": {
+          "end": 296,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 277,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 413,
+          "field": "off_target_analysis_method",
+          "quote": "GUIDE-seq",
+          "source": "gold",
+          "start": 404,
+          "status": "filled",
+          "value": "GUIDE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 637,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 635,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 708,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 695,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 633,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 630,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 564,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 555,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 767,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 751,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "TP53",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "TP53"
+        }
+      },
+      "paper_id": "A09",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the TP53 locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was GGCGCCATCTACAAGCAGTC. The PAM motif was NGG. Delivery used electroporation into HEK293T (RRID:CVCL_0063). A non-targeting sgRNA was included. Editing was measured by amplicon NGS (n = 5 biological replicates). Off-target analysis used GUIDE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 711,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 697,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 138,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 495,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 488,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 246,
+          "field": "cell_line_or_organism",
+          "quote": "K562",
+          "source": "gold",
+          "start": 242,
+          "status": "filled",
+          "value": "K562"
+        },
+        "cell_line_rrid": {
+          "end": 262,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0004",
+          "source": "gold",
+          "start": 248,
+          "status": "filled",
+          "value": "RRID:CVCL_0004"
+        },
+        "clone_isolation": {
+          "end": 584,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 566,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 810,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 784,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 236,
+          "field": "delivery_method",
+          "quote": "lentivirus",
+          "source": "gold",
+          "start": 226,
+          "status": "filled",
+          "value": "lentivirus"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 327,
+          "field": "editing_assay",
+          "quote": "T7E1",
+          "source": "gold",
+          "start": 323,
+          "status": "filled",
+          "value": "T7E1"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 478,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 457,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 391,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 187,
+          "field": "guide_sequence",
+          "quote": "AATTCCCGTCGCTATCAAGG",
+          "source": "gold",
+          "start": 167,
+          "status": "filled",
+          "value": "AATTCCCGTCGCTATCAAGG"
+        },
+        "guide_strand": {
+          "end": 443,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 437,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 526,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 518,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 769,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 759,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 334,
+          "field": "n_biological_replicates",
+          "quote": "3",
+          "source": "gold",
+          "start": 333,
+          "status": "filled",
+          "value": "3"
+        },
+        "nontargeting_control": {
+          "end": 284,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 267,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 391,
+          "field": "off_target_analysis_method",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "off_target_sites_tested": {
+          "end": 615,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 613,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 210,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 207,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 686,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 673,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 611,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 608,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 542,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 533,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 745,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 729,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "EGFR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "EGFR"
+        }
+      },
+      "paper_id": "A10",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the EGFR locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was AATTCCCGTCGCTATCAAGG. The PAM motif was NGG. Delivery used lentivirus into K562 (RRID:CVCL_0004). A scrambled control was included. Editing was measured by T7E1 (n = 3 biological replicates). Off-target analysis used CRISPOR. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 734,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 720,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 518,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 511,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 249,
+          "field": "cell_line_or_organism",
+          "quote": "HeLa",
+          "source": "gold",
+          "start": 245,
+          "status": "filled",
+          "value": "HeLa"
+        },
+        "cell_line_rrid": {
+          "end": 265,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0030",
+          "source": "gold",
+          "start": 251,
+          "status": "filled",
+          "value": "RRID:CVCL_0030"
+        },
+        "clone_isolation": {
+          "end": 607,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 589,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 833,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 807,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 239,
+          "field": "delivery_method",
+          "quote": "lipofection",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "lipofection"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 345,
+          "field": "editing_assay",
+          "quote": "Sanger sequencing",
+          "source": "gold",
+          "start": 328,
+          "status": "filled",
+          "value": "Sanger sequencing"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 501,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 480,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 449,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 442,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "ATGGCGCTCTGGGCCTGTTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "ATGGCGCTCTGGGCCTGTTC"
+        },
+        "guide_strand": {
+          "end": 466,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 460,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 549,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 541,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 792,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 782,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 352,
+          "field": "n_biological_replicates",
+          "quote": "4",
+          "source": "gold",
+          "start": 351,
+          "status": "filled",
+          "value": "4"
+        },
+        "nontargeting_control": {
+          "end": 289,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 270,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 414,
+          "field": "off_target_analysis_method",
+          "quote": "Cas-OFFinder",
+          "source": "gold",
+          "start": 402,
+          "status": "filled",
+          "value": "Cas-OFFinder"
+        },
+        "off_target_sites_tested": {
+          "end": 638,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 636,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 709,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 696,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 634,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 631,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 565,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 556,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 768,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 752,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "CFTR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "CFTR"
+        }
+      },
+      "paper_id": "A11",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the CFTR locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was ATGGCGCTCTGGGCCTGTTC. The PAM motif was NGG. Delivery used lipofection into HeLa (RRID:CVCL_0030). A non-targeting sgRNA was included. Editing was measured by Sanger sequencing (n = 4 biological replicates). Off-target analysis used Cas-OFFinder. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": 705,
+          "field": "antibody_rrid",
+          "quote": "RRID:AB_331743",
+          "source": "gold",
+          "start": 691,
+          "status": "filled",
+          "value": "RRID:AB_331743"
+        },
+        "cas_nuclease": {
+          "end": 137,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 133,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 489,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 482,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 238,
+          "field": "cell_line_or_organism",
+          "quote": "U2OS",
+          "source": "gold",
+          "start": 234,
+          "status": "filled",
+          "value": "U2OS"
+        },
+        "cell_line_rrid": {
+          "end": 254,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0042",
+          "source": "gold",
+          "start": 240,
+          "status": "filled",
+          "value": "RRID:CVCL_0042"
+        },
+        "clone_isolation": {
+          "end": 578,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 560,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": 804,
+          "field": "culture_conditions",
+          "quote": "DMEM with 10% FBS at 37 \u00b0C",
+          "source": "gold",
+          "start": 778,
+          "status": "filled",
+          "value": "DMEM with 10% FBS at 37 \u00b0C"
+        },
+        "delivery_method": {
+          "end": 228,
+          "field": "delivery_method",
+          "quote": "RNP",
+          "source": "gold",
+          "start": 225,
+          "status": "filled",
+          "value": "RNP"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 318,
+          "field": "editing_assay",
+          "quote": "ICE",
+          "source": "gold",
+          "start": 315,
+          "status": "filled",
+          "value": "ICE"
+        },
+        "genome_build": {
+          "end": 125,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 119,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 472,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 451,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 420,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 413,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 186,
+          "field": "guide_sequence",
+          "quote": "GATGAAGTTGGTGGTGAGGC",
+          "source": "gold",
+          "start": 166,
+          "status": "filled",
+          "value": "GATGAAGTTGGTGGTGAGGC"
+        },
+        "guide_strand": {
+          "end": 437,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 431,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 520,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 512,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": 763,
+          "field": "karyotype_or_cn_check",
+          "quote": "karyotyped",
+          "source": "gold",
+          "start": 753,
+          "status": "filled",
+          "value": "karyotyped"
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 325,
+          "field": "n_biological_replicates",
+          "quote": "5",
+          "source": "gold",
+          "start": 324,
+          "status": "filled",
+          "value": "5"
+        },
+        "nontargeting_control": {
+          "end": 276,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 259,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 385,
+          "field": "off_target_analysis_method",
+          "quote": "CIRCLE-seq",
+          "source": "gold",
+          "start": 375,
+          "status": "filled",
+          "value": "CIRCLE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 609,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 607,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 209,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 206,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 680,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 667,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 605,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 602,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 536,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 527,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 117,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 105,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 739,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 723,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 95,
+          "field": "target_gene",
+          "quote": "HBB",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "HBB"
+        }
+      },
+      "paper_id": "A12",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the HBB locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was GATGAAGTTGGTGGTGAGGC. The PAM motif was NGG. Delivery used RNP into U2OS (RRID:CVCL_0042). A scrambled control was included. Editing was measured by ICE (n = 5 biological replicates). Off-target analysis used CIRCLE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": null,
+          "field": "antibody_rrid",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 517,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 510,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 256,
+          "field": "cell_line_or_organism",
+          "quote": "HEK293T",
+          "source": "gold",
+          "start": 249,
+          "status": "filled",
+          "value": "HEK293T"
+        },
+        "cell_line_rrid": {
+          "end": 272,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0063",
+          "source": "gold",
+          "start": 258,
+          "status": "filled",
+          "value": "RRID:CVCL_0063"
+        },
+        "clone_isolation": {
+          "end": 606,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 588,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": null,
+          "field": "culture_conditions",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "delivery_method": {
+          "end": 243,
+          "field": "delivery_method",
+          "quote": "electroporation",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "electroporation"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 347,
+          "field": "editing_assay",
+          "quote": "amplicon NGS",
+          "source": "gold",
+          "start": 335,
+          "status": "filled",
+          "value": "amplicon NGS"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 500,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 479,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 448,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 441,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "GGCGCCATCTACAAGCAGTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "GGCGCCATCTACAAGCAGTC"
+        },
+        "guide_strand": {
+          "end": 465,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 459,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 548,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 540,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": null,
+          "field": "karyotype_or_cn_check",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 354,
+          "field": "n_biological_replicates",
+          "quote": "3",
+          "source": "gold",
+          "start": 353,
+          "status": "filled",
+          "value": "3"
+        },
+        "nontargeting_control": {
+          "end": 296,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 277,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 413,
+          "field": "off_target_analysis_method",
+          "quote": "GUIDE-seq",
+          "source": "gold",
+          "start": 404,
+          "status": "filled",
+          "value": "GUIDE-seq"
+        },
+        "off_target_sites_tested": {
+          "end": 637,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 635,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 708,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 695,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 633,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 630,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 564,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 555,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 767,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 751,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "TP53",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "TP53"
+        }
+      },
+      "paper_id": "A13",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the TP53 locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was GGCGCCATCTACAAGCAGTC. The PAM motif was NGG. Delivery used electroporation into HEK293T (RRID:CVCL_0063). A non-targeting sgRNA was included. Editing was measured by amplicon NGS (n = 3 biological replicates). Off-target analysis used GUIDE-seq. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": null,
+          "field": "antibody_rrid",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "cas_nuclease": {
+          "end": 138,
+          "field": "cas_nuclease",
+          "quote": "Cas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "Cas9"
+        },
+        "cas_variant": {
+          "end": 495,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 488,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 246,
+          "field": "cell_line_or_organism",
+          "quote": "K562",
+          "source": "gold",
+          "start": 242,
+          "status": "filled",
+          "value": "K562"
+        },
+        "cell_line_rrid": {
+          "end": 262,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0004",
+          "source": "gold",
+          "start": 248,
+          "status": "filled",
+          "value": "RRID:CVCL_0004"
+        },
+        "clone_isolation": {
+          "end": 584,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 566,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": null,
+          "field": "culture_conditions",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "delivery_method": {
+          "end": 236,
+          "field": "delivery_method",
+          "quote": "lentivirus",
+          "source": "gold",
+          "start": 226,
+          "status": "filled",
+          "value": "lentivirus"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 327,
+          "field": "editing_assay",
+          "quote": "T7E1",
+          "source": "gold",
+          "start": 323,
+          "status": "filled",
+          "value": "T7E1"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 478,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 457,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 391,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 187,
+          "field": "guide_sequence",
+          "quote": "AATTCCCGTCGCTATCAAGG",
+          "source": "gold",
+          "start": 167,
+          "status": "filled",
+          "value": "AATTCCCGTCGCTATCAAGG"
+        },
+        "guide_strand": {
+          "end": 443,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 437,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 526,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 518,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": null,
+          "field": "karyotype_or_cn_check",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 334,
+          "field": "n_biological_replicates",
+          "quote": "4",
+          "source": "gold",
+          "start": 333,
+          "status": "filled",
+          "value": "4"
+        },
+        "nontargeting_control": {
+          "end": 284,
+          "field": "nontargeting_control",
+          "quote": "scrambled control",
+          "source": "gold",
+          "start": 267,
+          "status": "filled",
+          "value": "scrambled control"
+        },
+        "off_target_analysis_method": {
+          "end": 391,
+          "field": "off_target_analysis_method",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 384,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "off_target_sites_tested": {
+          "end": 615,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 613,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 210,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 207,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 686,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 673,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 611,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 608,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 542,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 533,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 745,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 729,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "EGFR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "EGFR"
+        }
+      },
+      "paper_id": "A14",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the EGFR locus in Homo sapiens (GRCh38) using Cas9. The guide RNA sequence was AATTCCCGTCGCTATCAAGG. The PAM motif was NGG. Delivery used lentivirus into K562 (RRID:CVCL_0004). A scrambled control was included. Editing was measured by T7E1 (n = 4 biological replicates). Off-target analysis used CRISPOR. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    },
+    {
+      "gold": {
+        "animal_sex": {
+          "end": null,
+          "field": "animal_sex",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "animal_strain": {
+          "end": null,
+          "field": "animal_strain",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "antibody_rrid": {
+          "end": null,
+          "field": "antibody_rrid",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "cas_nuclease": {
+          "end": 140,
+          "field": "cas_nuclease",
+          "quote": "SpCas9",
+          "source": "gold",
+          "start": 134,
+          "status": "filled",
+          "value": "SpCas9"
+        },
+        "cas_variant": {
+          "end": 518,
+          "field": "cas_variant",
+          "quote": "eSpCas9",
+          "source": "gold",
+          "start": 511,
+          "status": "filled",
+          "value": "eSpCas9"
+        },
+        "cell_line_or_organism": {
+          "end": 249,
+          "field": "cell_line_or_organism",
+          "quote": "HeLa",
+          "source": "gold",
+          "start": 245,
+          "status": "filled",
+          "value": "HeLa"
+        },
+        "cell_line_rrid": {
+          "end": 265,
+          "field": "cell_line_rrid",
+          "quote": "RRID:CVCL_0030",
+          "source": "gold",
+          "start": 251,
+          "status": "filled",
+          "value": "RRID:CVCL_0030"
+        },
+        "clone_isolation": {
+          "end": 607,
+          "field": "clone_isolation",
+          "quote": "single-cell clones",
+          "source": "gold",
+          "start": 589,
+          "status": "filled",
+          "value": "single-cell clones"
+        },
+        "culture_conditions": {
+          "end": null,
+          "field": "culture_conditions",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "delivery_method": {
+          "end": 239,
+          "field": "delivery_method",
+          "quote": "lipofection",
+          "source": "gold",
+          "start": 228,
+          "status": "filled",
+          "value": "lipofection"
+        },
+        "donor_sequence": {
+          "end": null,
+          "field": "donor_sequence",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "donor_template_type": {
+          "end": null,
+          "field": "donor_template_type",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "editing_assay": {
+          "end": 345,
+          "field": "editing_assay",
+          "quote": "Sanger sequencing",
+          "source": "gold",
+          "start": 328,
+          "status": "filled",
+          "value": "Sanger sequencing"
+        },
+        "genome_build": {
+          "end": 126,
+          "field": "genome_build",
+          "quote": "GRCh38",
+          "source": "gold",
+          "start": 120,
+          "status": "filled",
+          "value": "GRCh38"
+        },
+        "genomic_coordinates": {
+          "end": 501,
+          "field": "genomic_coordinates",
+          "quote": "chr17:7676594-7676613",
+          "source": "gold",
+          "start": 480,
+          "status": "filled",
+          "value": "chr17:7676594-7676613"
+        },
+        "guide_design_software": {
+          "end": 449,
+          "field": "guide_design_software",
+          "quote": "CRISPOR",
+          "source": "gold",
+          "start": 442,
+          "status": "filled",
+          "value": "CRISPOR"
+        },
+        "guide_sequence": {
+          "end": 189,
+          "field": "guide_sequence",
+          "quote": "ATGGCGCTCTGGGCCTGTTC",
+          "source": "gold",
+          "start": 169,
+          "status": "filled",
+          "value": "ATGGCGCTCTGGGCCTGTTC"
+        },
+        "guide_strand": {
+          "end": 466,
+          "field": "guide_strand",
+          "quote": "Watson",
+          "source": "gold",
+          "start": 460,
+          "status": "filled",
+          "value": "Watson"
+        },
+        "harvest_timepoint": {
+          "end": 549,
+          "field": "harvest_timepoint",
+          "quote": "72 hours",
+          "source": "gold",
+          "start": 541,
+          "status": "filled",
+          "value": "72 hours"
+        },
+        "karyotype_or_cn_check": {
+          "end": null,
+          "field": "karyotype_or_cn_check",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_animals": {
+          "end": null,
+          "field": "n_animals",
+          "quote": null,
+          "source": "missing",
+          "start": null,
+          "status": "missing",
+          "value": null
+        },
+        "n_biological_replicates": {
+          "end": 352,
+          "field": "n_biological_replicates",
+          "quote": "5",
+          "source": "gold",
+          "start": 351,
+          "status": "filled",
+          "value": "5"
+        },
+        "nontargeting_control": {
+          "end": 289,
+          "field": "nontargeting_control",
+          "quote": "non-targeting sgRNA",
+          "source": "gold",
+          "start": 270,
+          "status": "filled",
+          "value": "non-targeting sgRNA"
+        },
+        "off_target_analysis_method": {
+          "end": 414,
+          "field": "off_target_analysis_method",
+          "quote": "Cas-OFFinder",
+          "source": "gold",
+          "start": 402,
+          "status": "filled",
+          "value": "Cas-OFFinder"
+        },
+        "off_target_sites_tested": {
+          "end": 638,
+          "field": "off_target_sites_tested",
+          "quote": "11",
+          "source": "gold",
+          "start": 636,
+          "status": "filled",
+          "value": "11"
+        },
+        "pam_motif": {
+          "end": 212,
+          "field": "pam_motif",
+          "quote": "NGG",
+          "source": "gold",
+          "start": 209,
+          "status": "filled",
+          "value": "NGG"
+        },
+        "plasmid_rrid": {
+          "end": 709,
+          "field": "plasmid_rrid",
+          "quote": "Addgene 62988",
+          "source": "gold",
+          "start": 696,
+          "status": "filled",
+          "value": "Addgene 62988"
+        },
+        "reported_editing_efficiency": {
+          "end": 634,
+          "field": "reported_editing_efficiency",
+          "quote": "55%",
+          "source": "gold",
+          "start": 631,
+          "status": "filled",
+          "value": "55%"
+        },
+        "selection_method": {
+          "end": 565,
+          "field": "selection_method",
+          "quote": "puromycin",
+          "source": "gold",
+          "start": 556,
+          "status": "filled",
+          "value": "puromycin"
+        },
+        "species": {
+          "end": 118,
+          "field": "species",
+          "quote": "Homo sapiens",
+          "source": "gold",
+          "start": 106,
+          "status": "filled",
+          "value": "Homo sapiens"
+        },
+        "statistical_test": {
+          "end": 768,
+          "field": "statistical_test",
+          "quote": "Student's t-test",
+          "source": "gold",
+          "start": 752,
+          "status": "filled",
+          "value": "Student's t-test"
+        },
+        "target_gene": {
+          "end": 96,
+          "field": "target_gene",
+          "quote": "CFTR",
+          "source": "gold",
+          "start": 92,
+          "status": "filled",
+          "value": "CFTR"
+        }
+      },
+      "paper_id": "A15",
+      "xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<article><sec sec-type=\"methods\"><p>\nWe targeted the CFTR locus in Homo sapiens (GRCh38) using SpCas9. The guide RNA sequence was ATGGCGCTCTGGGCCTGTTC. The PAM motif was NGG. Delivery used lipofection into HeLa (RRID:CVCL_0030). A non-targeting sgRNA was included. Editing was measured by Sanger sequencing (n = 5 biological replicates). Off-target analysis used Cas-OFFinder. Guides were designed with CRISPOR on strand Watson. Coordinates chr17:7676594-7676613. Variant eSpCas9. Cells were harvested 72 hours after puromycin selection. We isolated single-cell clones. Editing efficiency of 55%. 11 nominated off-target sites were assayed. The plasmid was Addgene 62988. Antibody RRID:AB_331743. Statistics used Student's t-test. Clones were karyotyped. Culture used DMEM with 10% FBS at 37 \u00b0C.\n</p></sec></article>\n"
+    }
+  ],
+  "pass": "B"
+}

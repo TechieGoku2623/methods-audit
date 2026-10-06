@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: methods-audit
+message: Research tool. Completeness scoring is not a quality or novelty judgment.
+type: software
+license: MIT
+version: 0.1.0

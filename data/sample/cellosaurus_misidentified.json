@@ -1,0 +1,36 @@
+{
+  "note": "Committed Cellosaurus / ICLAC-style misidentification list. Not a live Cellosaurus dump.",
+  "source": "Capes-Davis / ICLAC register of misidentified cell lines; Bairoch 2018 J Biomol Tech (Cellosaurus)",
+  "lines": {
+    "INT-407": {
+      "reported_as": "embryonic intestinal epithelium",
+      "actually": "HeLa",
+      "source": "ICLAC / Cellosaurus CVCL_1903"
+    },
+    "KB": {
+      "reported_as": "oral epidermoid carcinoma",
+      "actually": "HeLa",
+      "source": "ICLAC / Cellosaurus CVCL_0372"
+    },
+    "WISH": {
+      "reported_as": "human amnion",
+      "actually": "HeLa",
+      "source": "ICLAC / Cellosaurus CVCL_1905"
+    },
+    "Hep-2": {
+      "reported_as": "laryngeal carcinoma",
+      "actually": "HeLa",
+      "source": "ICLAC / Cellosaurus CVCL_1906"
+    },
+    "Chang liver": {
+      "reported_as": "normal liver",
+      "actually": "HeLa",
+      "source": "ICLAC / Cellosaurus CVCL_0238"
+    },
+    "MDA-MB-435": {
+      "reported_as": "breast carcinoma",
+      "actually": "M14 melanoma",
+      "source": "ICLAC / Cellosaurus CVCL_0417"
+    }
+  }
+}

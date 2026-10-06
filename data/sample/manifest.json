@@ -1,0 +1,40 @@
+{
+  "disclaimer": "Designed PMC-OA-style methods snippets. Not a live PMC dump. Completeness is not quality.",
+  "samples": [
+    {
+      "sample_id": "S1-complete",
+      "filename": "complete.xml",
+      "path_exercised": "thoroughly reported methods section; most required fields present",
+      "why_present": "The high-completeness path. Cross-checks should pass.",
+      "expected_behavior": "Extractor fills most required fields from spans. Completeness is high. Guide matches TP53. Cell line is not on the misidentification list."
+    },
+    {
+      "sample_id": "S2-no-guide",
+      "filename": "no-guide.xml",
+      "path_exercised": "missing guide sequence — the most common omission",
+      "why_present": "Nature reporting summaries still see this first. Do not invent a protospacer.",
+      "expected_behavior": "guide_sequence stays missing. Completeness drops. Guide-target check is skipped, not guessed."
+    },
+    {
+      "sample_id": "S3-guide-mismatch",
+      "filename": "guide-mismatch.xml",
+      "path_exercised": "stated guide does not target the stated gene",
+      "why_present": "A complete report can still be internally inconsistent. Completeness ≠ correctness.",
+      "expected_behavior": "guide_sequence is filled (AATTCCCGTCGCTATCAAGG). Complementarity check FAILs against TP53. Completeness still counts the field as present."
+    },
+    {
+      "sample_id": "S4-bad-cell-line",
+      "filename": "bad-cell-line.xml",
+      "path_exercised": "cell line on the committed Cellosaurus-style misidentification list",
+      "why_present": "INT-407 is a classic HeLa contaminant. The cross-check is the finding.",
+      "expected_behavior": "cell_line_or_organism = INT-407. cell_line_identity FAILs. Completeness may still be high."
+    },
+    {
+      "sample_id": "S5-indirect",
+      "filename": "indirect.xml",
+      "path_exercised": "information present only as 'as previously described' — extraction must fail",
+      "why_present": "The extractor is forbidden to guess from a citation. Missing, not inferred.",
+      "expected_behavior": "Required fields stay missing. Cache quotes are empty. Completeness is low. No hallucinated gene, guide, or cell line."
+    }
+  ]
+}

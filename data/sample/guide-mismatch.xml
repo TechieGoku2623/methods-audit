@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article>
+  <sec sec-type="methods">
+    <title>Methods</title>
+    <p>
+      We targeted the TP53 locus in Homo sapiens (GRCh38) using SpCas9.
+      The guide RNA sequence was AATTCCCGTCGCTATCAAGG. The PAM motif was NGG.
+      Lipofection delivered the plasmid into HeLa cells (RRID:CVCL_0030).
+      A scrambled control was included. Editing was measured by Sanger sequencing
+      (n = 3). Off-target analysis used CRISPOR. Guides were designed with CRISPOR.
+    </p>
+  </sec>
+</article>

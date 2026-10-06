@@ -1,0 +1,6 @@
+Extract CRISPR methods fields as JSON. Fill a field only when you can quote a span from the XML. If the information is only implied or cited as "previously described", leave the field missing. Never infer a guide sequence, gene, cell line, or replicate count.
+
+Paper id: {{PAPER_ID}}
+
+XML:
+{{XML}}
