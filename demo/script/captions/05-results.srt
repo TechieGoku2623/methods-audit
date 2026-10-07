@@ -1,0 +1,4 @@
+1
+00:00:02,473 --> 00:00:08,476
+Per-field F1 against hand annotation, with the
+self-agreement ceiling

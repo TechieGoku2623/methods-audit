@@ -17,7 +17,7 @@ from methods_audit.resolve import resolve_paper
 from methods_audit.schemas import CompletenessScore, ConsistencyCheck, Extraction, SamplePaper
 
 app = typer.Typer(no_args_is_help=True, add_completion=False)
-console = Console(width=140)
+console = Console(width=100)
 
 
 def load_samples() -> list[SamplePaper]:
@@ -153,11 +153,34 @@ def sample_path() -> None:
 def extract_cmd(
     paper: Path | None = typer.Option(None, "--paper", help="Path to PMC-OA-style XML"),
     doi: str | None = typer.Option(None, "--doi", help="Committed DOI for one of the five samples"),
+    summary: bool = typer.Option(False, "--summary", help="Filled fields only"),
 ) -> None:
     """Print every schema field. Missing stays missing. No inference."""
 
     path, extraction, _score, _checks = _audit_resolved(paper, doi)
-    _print_extraction(path, extraction)
+    if summary:
+        console.print(f"[bold]{extraction.paper_id}[/bold]  {path}")
+        shown = 0
+        for name in FIELD_NAMES:
+            item = extraction.fields[name]
+            if not item.filled():
+                continue
+            span = (
+                f"{item.start}-{item.end}"
+                if item.start is not None and item.end is not None
+                else "—"
+            )
+            quote = (item.quote or "")[:40]
+            console.print(
+                f"  {name:24}  {item.value}  source={item.source}  span={span}  quote={quote!r}"
+            )
+            shown += 1
+            if shown >= 6:
+                break
+        missing = sum(1 for name in FIELD_NAMES if not extraction.fields[name].filled())
+        console.print(f"missing stays missing: {missing} unfilled fields")
+    else:
+        _print_extraction(path, extraction)
     _print_disclaimer()
 
 
@@ -165,11 +188,22 @@ def extract_cmd(
 def score_cmd(
     paper: Path | None = typer.Option(None, "--paper", help="Path to PMC-OA-style XML"),
     doi: str | None = typer.Option(None, "--doi", help="Committed DOI for one of the five samples"),
+    summary: bool = typer.Option(False, "--summary", help="Completeness and missing required only"),
 ) -> None:
     """Completeness plus missing fields by required / conditional / optional."""
 
     path, _extraction, score, _checks = _audit_resolved(paper, doi)
-    _print_score(path, score)
+    if summary:
+        shown_path = path.name if path.is_absolute() else path
+        console.print(f"[bold]{score.paper_id}[/bold]  {shown_path}")
+        console.print(
+            f"completeness:  {score.completeness:.3f}  "
+            f"({score.n_filled}/{score.n_applicable} applicable fields filled)"
+        )
+        console.print(f"required missing:  {_list_or_none(score.missing_required)}")
+        console.print("Completeness is a claim about the text, not a quality judgment.")
+    else:
+        _print_score(path, score)
     _print_disclaimer()
 
 
@@ -189,6 +223,25 @@ def check_cmd(
     for check in checks:
         _print_check(check)
         console.print()
+    _print_disclaimer()
+
+
+@app.command("eval")
+def eval_cmd(
+    summary: bool = typer.Option(True, "--summary/--full"),
+) -> None:
+    """Print per-field F1 against hand annotation."""
+
+    path = get_settings().repo_root / "docs" / "EVALUATION.md"
+    n = 0
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# Evaluation"):
+            continue
+        console.print(line[:100])
+        if line.strip():
+            n += 1
+        if n >= 14:
+            break
     _print_disclaimer()
 
 

@@ -1,0 +1,3 @@
+1
+00:00:04,973 --> 00:00:15,475
+The stated guide does not target the stated gene

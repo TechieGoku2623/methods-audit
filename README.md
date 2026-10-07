@@ -8,6 +8,11 @@ to infer, and deterministic completeness scoring plus the cross-checks
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+
+![methods-audit demo](demo/out/methods-audit-demo.gif)
+
+Regenerable terminal video: `make record`. [Full mp4](demo/out/methods-audit-demo.mp4). Per-shot loops live in `demo/out/`. See `demo/README.md`.
+
 ## Status
 
 | Phase | Deliverable | Status |

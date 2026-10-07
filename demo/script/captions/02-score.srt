@@ -1,0 +1,4 @@
+1
+00:00:05,307 --> 00:00:08,807
+Completeness is a claim about the text, not a quality
+judgment

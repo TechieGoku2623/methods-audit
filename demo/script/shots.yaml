@@ -1,0 +1,39 @@
+title: methods-audit
+tagline: Replication-completeness scoring for CRISPR methods sections
+problem:
+  - Methods sections routinely omit what replication requires.
+  - Guide sequence, Cas variant, passage number, validation assay.
+  - Replication fails and nobody can tell whether it was the biology.
+shots:
+  - id: 01-extract
+    command: methods-audit extract --paper data/sample/complete.xml --summary
+    caption: Every field carries its source span — missing stays missing
+    hold: 4.0
+    highlight: "span=|source="
+    failure_beat: false
+  - id: 02-score
+    command: methods-audit score --paper data/sample/no-guide.xml --summary
+    caption: Completeness is a claim about the text, not a quality judgment
+    hold: 3.5
+    highlight: "completeness"
+    failure_beat: false
+  - id: 03-guide-mismatch
+    command: methods-audit check --paper data/sample/guide-mismatch.xml
+    caption: The stated guide does not target the stated gene
+    hold: 4.5
+    highlight: "mismatch|alignment|does not"
+    failure_beat: true
+  - id: 04-cell-line
+    command: methods-audit check --paper data/sample/bad-cell-line.xml
+    caption: Cell line is on the Cellosaurus misidentification list
+    hold: 3.5
+    highlight: "misidentif|Cellosaurus"
+    failure_beat: false
+results:
+  command: methods-audit eval --summary
+  caption: Per-field F1 against hand annotation, with the self-agreement ceiling
+  hold: 6.0
+end_card:
+  url: github.com/techiegoku2623/methods-audit
+  license: MIT
+gif_beat: 03-guide-mismatch
